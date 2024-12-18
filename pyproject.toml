@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ProjetoStreamlit"
+version = "0.1.0"
+description = "Projeto Streamlit"
+authors = ["VitorSantana"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.2.3"
+streamlit = "^1.41.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -37,9 +37,9 @@ if  municipio:
     st.markdown(f'Municipio: {municipio}')
     dados_municipio = request_pix_municipio(municipio=municipio,data_base_inicial=data1,data_base_final=data2)
     print(dados_municipio)
-    st.bar_chart(dados_municipio,x='AnoMes',y='QT_PagadorPF')
-    st.line_chart(dados_municipio,x='AnoMes',y='VL_PagadorPF')
+    st.bar_chart(dados_municipio,x='AnoMes',y='QT_RecebedorPF')
+    st.line_chart(dados_municipio,x='AnoMes',y='VL_RecebedorPF')
 
-    st.bar_chart(dados_municipio,x='AnoMes',y='QT_PagadorPJ')
+    st.bar_chart(dados_municipio,x='AnoMes',y='QT_RecebedorPJ')
     st.line_chart(dados_municipio,x='AnoMes',y='VL_RecebedorPJ')
 #= pd.to_datetime(f"{str(dados_municipio['AnoMes'])[:4]}-{str(dados_municipio['AnoMes'])[4:]}-01")
